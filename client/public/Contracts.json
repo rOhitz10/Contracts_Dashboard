@@ -1,0 +1,253 @@
+[
+  {
+    "id": "c1",
+    "name": "MSA 2025",
+    "parties": "Microsoft & ABC Corp",
+    "start": "2023-01-01",
+    "expiry": "2025-12-31",
+    "status": "Active",
+    "risk": "Medium",
+    "clauses": [
+      { "title": "Termination", "summary": "90 days notice period.", "confidence": 0.82 },
+      { "title": "Liability Cap", "summary": "12 months' fees limit.", "confidence": 0.87 }
+    ],
+    "insights": [
+      { "risk": "High", "message": "Liability cap excludes data breach costs." },
+      { "risk": "Medium", "message": "Renewal auto-renews unless cancelled 60 days before expiry." }
+    ],
+    "evidence": [
+      { "source": "Section 12.2", "snippet": "Total liability limited to 12 months' fees.", "relevance": 0.91 }
+    ]
+  },
+  {
+    "id": "c2",
+    "name": "Cloud Services Agreement",
+    "parties": "Amazon Web Services & Tech Innovations Inc",
+    "start": "2023-03-15",
+    "expiry": "2025-03-14",
+    "status": "Active",
+    "risk": "High",
+    "clauses": [
+      { "title": "Data Ownership", "summary": "Customer retains all rights to their data.", "confidence": 0.95 },
+      { "title": "Service Levels", "summary": "99.9% uptime guarantee with financial credits.", "confidence": 0.88 }
+    ],
+    "insights": [
+      { "risk": "Critical", "message": "Data portability restrictions may cause vendor lock-in." },
+      { "risk": "Medium", "message": "Force majeure clause is unusually broad." }
+    ],
+    "evidence": [
+      { "source": "Section 8.4", "snippet": "Customer data will be returned in standard format upon termination.", "relevance": 0.89 },
+      { "source": "Section 15.7", "snippet": "Service credits are sole remedy for downtime events.", "relevance": 0.84 }
+    ]
+  },
+  {
+    "id": "c3",
+    "name": "Software License Agreement",
+    "parties": "Adobe Systems & Creative Designs LLC",
+    "start": "2022-11-01",
+    "expiry": "2024-10-31",
+    "status": "Renewal Due",
+    "risk": "Medium",
+    "clauses": [
+      { "title": "Usage Rights", "summary": "Enterprise-wide license for 250 users.", "confidence": 0.92 },
+      { "title": "Audit Rights", "summary": "Vendor may audit usage once per year.", "confidence": 0.79 }
+    ],
+    "insights": [
+      { "risk": "High", "message": "Audit clause lacks limitations on scope and costs." },
+      { "risk": "Low", "message": "License includes all future updates during term." }
+    ],
+    "evidence": [
+      { "source": "Section 5.2", "snippet": "Licensee shall provide access to systems for compliance verification.", "relevance": 0.87 },
+      { "source": "Exhibit A", "snippet": "List of authorized users and permitted installations.", "relevance": 0.76 }
+    ]
+  },
+  {
+    "id": "c4",
+    "name": "Consulting Services Agreement",
+    "parties": "McKinsey & Company & Global Enterprises Inc",
+    "start": "2023-06-01",
+    "expiry": "2024-05-31",
+    "status": "Active",
+    "risk": "Low",
+    "clauses": [
+      { "title": "Work Product", "summary": "Client owns all deliverables and IP.", "confidence": 0.94 },
+      { "title": "Confidentiality", "summary": "Mutual NDA for 3 years post-termination.", "confidence": 0.91 }
+    ],
+    "insights": [
+      { "risk": "Medium", "message": "Change order process lacks clear pricing methodology." },
+      { "risk": "Low", "message": "Clear acceptance criteria for all deliverables." }
+    ],
+    "evidence": [
+      { "source": "Section 7.3", "snippet": "All work product becomes property of Client upon payment.", "relevance": 0.93 },
+      { "source": "Section 9.1", "snippet": "Confidentiality obligations survive termination for 36 months.", "relevance": 0.88 }
+    ]
+  },
+  {
+    "id": "c5",
+    "name": "Data Processing Addendum",
+    "parties": "Salesforce & HealthCare Solutions Inc",
+    "start": "2023-02-10",
+    "expiry": "2026-02-09",
+    "status": "Active",
+    "risk": "High",
+    "clauses": [
+      { "title": "Data Security", "summary": "SOC 2 compliance required with annual audits.", "confidence": 0.89 },
+      { "title": "Breach Notification", "summary": "72-hour notification requirement for incidents.", "confidence": 0.93 }
+    ],
+    "insights": [
+      { "risk": "Critical", "message": "Subprocessor changes require only website notification, not consent." },
+      { "risk": "High", "message": "Data retention period exceeds regulatory requirements." }
+    ],
+    "evidence": [
+      { "source": "Appendix B", "snippet": "Technical and organizational security measures documentation.", "relevance": 0.95 },
+      { "source": "Section 4.2", "snippet": "Processor may engage new subprocessors by updating website list.", "relevance": 0.91 }
+    ]
+  },
+  {
+    "id": "c6",
+    "name": "Enterprise License Agreement",
+    "parties": "Oracle Corporation & Financial Services Group",
+    "start": "2022-01-01",
+    "expiry": "2024-12-31",
+    "status": "Expired",
+    "risk": "Medium",
+    "clauses": [
+      { "title": "License Metrics", "summary": "Named User Plus licensing model for 500 users.", "confidence": 0.86 },
+      { "title": "Support Services", "summary": "24/7 support with 2-hour response time for critical issues.", "confidence": 0.82 }
+    ],
+    "insights": [
+      { "risk": "High", "message": "Unlimited audit rights with broad scope definition." },
+      { "risk": "Medium", "message": "Price protection only for first renewal term." }
+    ],
+    "evidence": [
+      { "source": "Section 3.5", "snippet": "Licensee shall maintain accurate records of all users and installations.", "relevance": 0.88 },
+      { "source": "Exhibit C", "snippet": "Support response times and escalation procedures.", "relevance": 0.79 }
+    ]
+  },
+  {
+    "id": "c7",
+    "name": "Non-Disclosure Agreement",
+    "parties": "Google AI & Startup Innovations Ltd",
+    "start": "2023-09-01",
+    "expiry": "2026-08-31",
+    "status": "Active",
+    "risk": "Low",
+    "clauses": [
+      { "title": "Confidentiality Period", "summary": "5 years protection for disclosed information.", "confidence": 0.91 },
+      { "title": "Residuals Clause", "summary": "No residuals rights for receiving party.", "confidence": 0.87 }
+    ],
+    "insights": [
+      { "risk": "Medium", "message": "Unilateral NDA favors disclosing party in all aspects." },
+      { "risk": "Low", "message": "Clear exceptions for independently developed information." }
+    ],
+    "evidence": [
+      { "source": "Section 2.1", "snippet": "Obligation of confidentiality shall survive for 5 years after disclosure.", "relevance": 0.92 },
+      { "source": "Section 4.3", "snippet": "Receiving party shall not use Confidential Information for any purpose other than evaluation.", "relevance": 0.85 }
+    ]
+  },
+  {
+    "id": "c8",
+    "name": "SaaS Subscription Agreement",
+    "parties": "Slack Technologies & Marketing Agency Partners",
+    "start": "2023-04-15",
+    "expiry": "2024-04-14",
+    "status": "Active",
+    "risk": "Medium",
+    "clauses": [
+      { "title": "Subscription Term", "summary": "Annual subscription with auto-renewal.", "confidence": 0.84 },
+      { "title": "Data Export", "summary": "30-day data retrieval period after termination.", "confidence": 0.79 }
+    ],
+    "insights": [
+      { "risk": "High", "message": "Data export functionality limited to certain formats." },
+      { "risk": "Medium", "message": "Suspension rights are broad and unilateral." }
+    ],
+    "evidence": [
+      { "source": "Section 6.2", "snippet": "Service may be suspended for any suspected violation of terms.", "relevance": 0.83 },
+      { "source": "Section 11.4", "snippet": "Customer data will be available for export for 30 days post-termination.", "relevance": 0.88 }
+    ]
+  },
+  {
+    "id": "c9",
+    "name": "Master Services Agreement",
+    "parties": "IBM Global Services & Manufacturing Conglomerate",
+    "start": "2022-07-01",
+    "expiry": "2027-06-30",
+    "status": "Active",
+    "risk": "Medium",
+    "clauses": [
+      { "title": "Termination for Convenience", "summary": "Either party may terminate with 90 days notice.", "confidence": 0.89 },
+      { "title": "Limitation of Liability", "summary": "Cap of 12 months fees or $1M, whichever is greater.", "confidence": 0.85 }
+    ],
+    "insights": [
+      { "risk": "Medium", "message": "Most favored nation clause may limit future negotiations." },
+      { "risk": "Low", "message": "Clear dispute resolution process with escalation path." }
+    ],
+    "evidence": [
+      { "source": "Section 14.3", "snippet": "Neither party shall be liable for indirect, special or consequential damages.", "relevance": 0.87 },
+      { "source": "Exhibit E", "snippet": "Change control procedures and approval requirements.", "relevance": 0.82 }
+    ]
+  },
+  {
+    "id": "c10",
+    "name": "Software Development Agreement",
+    "parties": "Accenture & FinTech Startup Inc",
+    "start": "2023-08-01",
+    "expiry": "2024-07-31",
+    "status": "Active",
+    "risk": "High",
+    "clauses": [
+      { "title": "Acceptance Criteria", "summary": "14-day testing period for each deliverable.", "confidence": 0.88 },
+      { "title": "IP Ownership", "summary": "Client owns all custom-developed code and IP.", "confidence": 0.92 }
+    ],
+    "insights": [
+      { "risk": "Critical", "message": "Payment milestones not tied to specific acceptance criteria." },
+      { "risk": "High", "message": "Warranties exclude third-party open source components." }
+    ],
+    "evidence": [
+      { "source": "Section 5.4", "snippet": "Client shall have 14 business days to test and accept each deliverable.", "relevance": 0.9 },
+      { "source": "Section 8.2", "snippet": "Developer assigns all rights to work product to Client upon payment.", "relevance": 0.94 }
+    ]
+  },
+  {
+    "id": "c11",
+    "name": "Cloud Infrastructure Agreement",
+    "parties": "Microsoft Azure & E-commerce Retailer",
+    "start": "2023-05-20",
+    "expiry": "2025-05-19",
+    "status": "Active",
+    "risk": "Medium",
+    "clauses": [
+      { "title": "Service Credits", "summary": "10% credit for uptime below 99.9%.", "confidence": 0.86 },
+      { "title": "Data Location", "summary": "Primary storage in US region with optional EU backup.", "confidence": 0.91 }
+    ],
+    "insights": [
+      { "risk": "High", "message": "Data transfer mechanisms rely on outdated Privacy Shield framework." },
+      { "risk": "Medium", "message": "Scheduled maintenance excluded from uptime calculations." }
+    ],
+    "evidence": [
+      { "source": "SLA Section 3.2", "snippet": "Service credits are Customer's sole and exclusive remedy for downtime.", "relevance": 0.87 },
+      { "source": "Section 9.4", "snippet": "Data may be transferred to countries with adequate protection measures.", "relevance": 0.9 }
+    ]
+  },
+  {
+    "id": "c12",
+    "name": "Marketing Services Agreement",
+    "parties": "Publicis Groupe & Consumer Brand Inc",
+    "start": "2023-02-01",
+    "expiry": "2024-01-31",
+    "status": "Active",
+    "risk": "Low",
+    "clauses": [
+      { "title": "Performance Metrics", "summary": "KPIs tied to customer acquisition costs.", "confidence": 0.83 },
+      { "title": "Content Ownership", "summary": "Client owns all created marketing materials.", "confidence": 0.89 }
+    ],
+    "insights": [
+      { "risk": "Medium", "message": "Indemnification for IP infringement limited to direct damages only." },
+      { "risk": "Low", "message": "Clear approval process for all campaign materials." }
+    ],
+    "evidence": [
+      { "source": "Exhibit B", "snippet": "Key performance indicators and measurement methodology.", "relevance": 0.85 },
+      { "source": "Section 7.1", "snippet": "Agency assigns all rights to deliverables upon full payment.", "relevance": 0.88 }
+    ]
+  }
+]
