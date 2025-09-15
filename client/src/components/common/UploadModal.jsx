@@ -37,26 +37,23 @@ const UploadModal = ({ isOpen, onClose }) => {
       name: file.name,
       size: file.size,
       type: file.type,
-      status: 'pending', // pending, uploading, success, error
+      status: 'pending',
       progress: 0,
       error: null
     }));
 
     setFiles(prev => [...prev, ...processedFiles]);
     
-    // Start upload simulation for each file
     processedFiles.forEach(file => simulateUpload(file.id));
   };
 
   const simulateUpload = (fileId) => {
-    // Update status to uploading
     setFiles(prev => 
       prev.map(file => 
         file.id === fileId ? { ...file, status: 'uploading' } : file
       )
     );
 
-    // Simulate progress
     const interval = setInterval(() => {
       setFiles(prev => 
         prev.map(file => {
@@ -69,11 +66,9 @@ const UploadModal = ({ isOpen, onClose }) => {
       );
     }, 300);
 
-    // Simulate completion or error
     setTimeout(() => {
       clearInterval(interval);
       
-      // Randomly decide if upload succeeds or fails (80% success rate)
       const isSuccess = Math.random() > 0.2;
       
       setFiles(prev => 
@@ -190,7 +185,7 @@ const UploadModal = ({ isOpen, onClose }) => {
                       {/* Status icon */}
                       {getStatusIcon(file.status)}
                       
-                      {/* Remove button */}
+                      {/* Remov button */}
                       <button 
                         onClick={() => removeFile(file.id)}
                         className="ml-2 text-gray-400 hover:text-gray-600"
@@ -205,7 +200,7 @@ const UploadModal = ({ isOpen, onClose }) => {
           )}
         </div>
         
-        {/* Footer */}
+       
         <div className="px-6 py-4 border-t border-gray-200 bg-gray-50 flex justify-end">
           <button 
             onClick={onClose}

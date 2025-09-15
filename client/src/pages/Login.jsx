@@ -17,17 +17,16 @@ export const Login = () => {
     setIsLoading(true);
     setError('');
 
-    // Simulate API call delay
+    // API call delay
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    // Mock authentication - password must be "test123"
     if (password === 'test123') {
       // Create mock JWT token
       const mockToken = btoa(JSON.stringify({
         username,
         role: 'user',
         iat: Date.now(),
-        exp: Date.now() + (24 * 60 * 60 * 1000) // 24 hours
+        exp: Date.now() + (24 * 60 * 60 * 1000) 
       }));
       
       login(username,mockToken)
@@ -113,9 +112,7 @@ export const Login = () => {
                   )}
                 </button>
               </div>
-              {/* <p className="mt-1 text-xs text-gray-500">
-                Hint: Use <span className="font-mono">test123</span> as password
-              </p> */}
+             
             </div>
           </div>
 

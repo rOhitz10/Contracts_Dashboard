@@ -191,7 +191,7 @@ export const Sidebar = () => {
           })}
         </nav>
 
-        {/* Footer */}
+        {/* Logut */}
         <motion.div
           className="p-4 border-t border-gray-800"
           initial={{ opacity: 0 }}
@@ -210,7 +210,7 @@ export const Sidebar = () => {
 
       {/* Main content offset for sidebar */}
       <div className={`${isCollapsed ? "lg:ml-20" : "lg:ml-64"} transition-margin duration-300`}>
-        {/* Your main content goes here */}
+       
       </div>
     </>
   );
